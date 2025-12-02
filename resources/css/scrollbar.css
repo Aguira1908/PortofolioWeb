@@ -1,0 +1,27 @@
+/* -------------------------------------------
+
+scrollbar
+
+------------------------------------------- */
+.mil-progress-track {
+  position: absolute;
+  z-index: 99;
+  width: 4px;
+  height: calc(100vh - 90px);
+}
+.mil-progress-track .mil-progress {
+  width: 100%;
+  height: 0;
+  background-color: rgb(76, 175, 80);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+@media screen and (max-width: 992px) {
+  .mil-progress-track {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

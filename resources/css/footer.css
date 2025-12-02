@@ -1,0 +1,77 @@
+/* -------------------------------------------
+
+footer
+
+------------------------------------------- */
+footer {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(32, 33, 36);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer:before,
+footer:after {
+  content: '';
+  height: 100px;
+  width: 500px;
+  background-color: rgb(32, 33, 36);
+  position: absolute;
+  top: 0;
+  left: -500px;
+}
+footer:after {
+  left: auto;
+  right: -500px;
+}
+footer a {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+footer a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: rgb(244, 67, 54);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+footer a:hover {
+  color: rgb(244, 67, 54) !important;
+}
+footer a:hover:after {
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
