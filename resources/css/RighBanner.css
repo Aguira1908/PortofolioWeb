@@ -1,0 +1,124 @@
+/* -------------------------------------------
+
+right banner
+
+------------------------------------------- */
+.mil-right-banner {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  width: 35%;
+  height: calc(100vh - 90px);
+  background-color: rgb(233, 233, 233);
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+@media screen and (max-width: 992px) {
+  .mil-right-banner {
+    display: none;
+  }
+}
+.mil-right-banner img {
+  position: absolute;
+  -o-object-position: top;
+  object-position: top;
+}
+.mil-right-banner .mil-banner-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame {
+  width: 100%;
+  height: 100%;
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-right-banner
+  .mil-banner-wrapper
+  .mil-banner-frame
+  .mil-banner-bg.mil-blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.mil-right-banner .mil-banner-wrapper .mil-banner-frame .mil-banner-person {
+  top: 0;
+  left: 0;
+  width: 106%;
+  height: 106%;
+  margin-left: -3%;
+  margin-top: -3%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.mil-flying-skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-flying-skills .mil-skills-frame {
+  width: 100%;
+  height: 100%;
+}
+.mil-flying-skills .mil-skills-frame .mil-item {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+}
+.mil-flying-skills .mil-skills-frame .mil-item img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .mil-flying-skills .mil-skills-frame .mil-item {
+    width: 80px;
+    height: 80px;
+  }
+}
+.mil-flying-skills .mil-skills-frame .mil-el {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mil-flying-skills .mil-skills-frame .mil-el.mil-addition-el-1 {
+  bottom: 40%;
+  left: 20%;
+}
+.mil-flying-skills .mil-skills-frame .mil-el.mil-addition-el-2 {
+  bottom: 25%;
+  right: 20%;
+  font-size: 38px;
+}
+.mil-flying-skills .mil-skills-frame .mil-el.mil-addition-el-3 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 5px rgb(255, 255, 255);
+  top: 12%;
+  left: 25%;
+}
+.mil-flying-skills .mil-skills-frame .mil-el.mil-addition-el-4 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 3px rgb(255, 255, 255);
+  top: 30%;
+  right: 25%;
+}

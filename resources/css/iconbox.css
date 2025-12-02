@@ -1,0 +1,38 @@
+/* -------------------------------------------
+
+iconbox
+
+------------------------------------------- */
+.mil-icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mil-icon-box .mil-service-icon {
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.mil-icon-box .mil-service-icon img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-icon-box:hover .mil-service-icon img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

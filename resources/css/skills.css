@@ -1,0 +1,71 @@
+/* -------------------------------------------
+
+skills
+
+------------------------------------------- */
+.mil-circular-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  --p: 0;
+  background: conic-gradient(
+    rgb(76, 175, 80) var(--p, 0),
+    0,
+    rgb(233, 233, 233)
+  );
+}
+.mil-circular-progress:after {
+  content: '';
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: rgb(253, 253, 253);
+  position: absolute;
+}
+.mil-circular-progress .mil-counter-frame {
+  position: absolute;
+  z-index: 999;
+}
+
+.mil-line-progress {
+  background-color: rgb(233, 233, 233);
+  height: 4px;
+  width: 100%;
+}
+.mil-line-progress .mil-bar {
+  position: relative;
+  height: 100%;
+  background-color: rgb(76, 175, 80);
+}
+.mil-line-progress .mil-bar:before {
+  opacity: 0;
+  content: attr(data-value);
+  position: absolute;
+  top: -52px;
+  right: 15px;
+  color: rgb(32, 33, 36);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+.mil-line-progress .mil-bar.mil-active:before {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 1;
+  right: 0;
+}
