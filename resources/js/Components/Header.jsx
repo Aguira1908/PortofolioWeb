@@ -74,8 +74,8 @@ const Header = () => {
               </ul> */}
             </li>
             <li className="mil-has-children">
-              <a href="">Blog</a>
-              <ul>
+              <a href="#">Blog</a>
+              {/* <ul>
                 <li>
                   <a href="blog-1.html">Blog list</a>
                 </li>
@@ -88,14 +88,14 @@ const Header = () => {
                 <li>
                   <a href="publication-2.html">Full width Publication</a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="#">Contact</a>
             </li>
             <li className="mil-has-children">
-              <a href="">Other</a>
-              <ul>
+              <a href="#">Other</a>
+              {/* <ul>
                 <li>
                   <a href="story.html">Story timeline</a>
                 </li>
@@ -108,14 +108,14 @@ const Header = () => {
                 <li>
                   <a href="404.html">404</a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
           </ul>
         </nav>
       </div>
 
       <div className="mil-top-panel-btns">
-        <a href="contact.html" className="mil-contact-btn">
+        <a href="#" className="mil-contact-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
