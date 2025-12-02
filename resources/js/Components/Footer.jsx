@@ -7,16 +7,7 @@ const Footer = () => {
       <p className="mil-light-soft text-white/50">
         © 2023. Courtney. All rights reserved.
       </p>
-      <p className="mil-light-soft text-white/50">
-        Author: &nbsp;
-        <a
-          href="https://themeforest.net/user/millerdigitaldesign/portfolio"
-          target="_blank"
-          className=""
-        >
-          Nazar Miller
-        </a>
-      </p>
+      <p className="mil-light-soft text-white/50">Author: Zikkri Amri</p>
     </footer>
   );
 };
